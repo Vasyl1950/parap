@@ -1,0 +1,25 @@
+
+h3{
+font-size: 1.75rem;
+margin-top: 4rem;
+color:#a8ace0;
+
+}
+
+p{
+    font-size:22px;
+    font-weight:bold;
+    color:#7d9098;
+}
+.thumbnail img{
+box-shadow: inset 0px 0px 75px black;
+border: 2px solid black
+}
+ .thumbnail img:hover {
+ 	 box-shadow: none;
+  transition: all 0.3s linear;
+ }
+hr{
+  border: 1px dashed gray;
+
+}

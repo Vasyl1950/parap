@@ -1,0 +1,19 @@
+
+ <h2>{{ title }}</h2>
+<div class="row">
+   <div id="hal" container-fluid>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='all'" (click)="filterBy='all'"> Вся галерея</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='cover'" (click)="filterBy='cover'">Ресторан</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='kitchen'" (click)="filterBy='kitchen'">Кухня </button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='different'" (click)="filterBy='different'">Різне</button>
+</div>
+    <ul id="thumbnailsList">
+        <li *ngFor=" let image of (visibleImages | imageFilter:filterBy)">
+        	
+           <a [routerLink] ="['/image', image.id]">
+                <img src="{{image.url}}" class="tn" width="200" height="160">
+           </a>
+
+        </li>
+    </ul>
+</div>

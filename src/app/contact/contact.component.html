@@ -1,0 +1,21 @@
+<div class="container" id="par-1">
+  <div class="row">
+    <div id="panel" class="col-md-12">
+      <h1>Як нас знайти?</h1>
+      <p>
+        <b>Карта Надвірної</b>
+      </p>
+      <div class="map">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false" (mapClick)="mapClicked($event)">
+          <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
+            [label]="m.label" (dragEnd)="markerDragEnd(m, $event)">
+            <agm-info-window>
+              <strong style="color: #830c79">Виробництво Парапетів на паркан
+                <br> та кришок стовпчика</strong>
+            </agm-info-window>
+          </agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
+</div>

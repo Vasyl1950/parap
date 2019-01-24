@@ -1,0 +1,50 @@
+agm-map {
+  height: 300px;
+}
+
+
+* {
+  font-family: Lato;
+}
+
+a {
+  color: darkblue;
+}
+ #a1 {
+   
+  padding-top: 85px;
+    background-color: #171a2acc;
+    text-align: center;
+    border: 4px solid #6E6E6E;
+    box-shadow: 0  0 6px #987E7E, 0 0 4px 6px;
+    border-radius: 8px;
+    margin-bottom: auto;
+    color: #a8ace0;
+    position: -webkit-sticky;
+  	position: -moz-sticky;
+  	position: -ms-sticky;
+    position: -o-sticky;
+}
+
+
+@media (min-width: 576px){
+     #a1 {
+    padding-top: 105px;
+}
+ }
+ 
+@media (min-width: 768px){
+     #a1 {
+    padding-top: 95px;
+}
+ }
+ @media (min-width: 992px){
+    #a1 {
+    padding-top: 65px;
+}
+ }
+@media (min-width: 1200px){
+   #a1 {
+    padding-top: 70px;
+}
+}

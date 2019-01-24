@@ -1,0 +1,28 @@
+ #bl-3, #bl-2 {
+     flex: 1;
+    position: relative;
+    margin: 2px auto;
+    padding: 2px;
+    z-index: 5;
+    background-color: #171a2acc;
+    text-align: center;
+    border: 4px solid #6E6E6E;
+    box-shadow: 0  0 6px #987E7E, 0 0 4px 6px;
+    border-radius: 8px;
+    height: 100%;
+
+    -webkit-transition:background-color 0.25s;
+    -moz-transition:background-color 0.25s;
+    transition:background-color 0.25s;
+
+}
+#bl-3{
+	font-family: 'Roboto','sans-serif';
+	font-size: 0.8rem !important;
+	color:#ccbfbf !important
+}
+
+
+.fa-phone::before {
+     content: "\f095";
+}

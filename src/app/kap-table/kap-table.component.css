@@ -1,0 +1,36 @@
+img{
+	max-width: 250px;
+	float: left;
+	vertical-align: middle
+}
+
+
+table{
+	background-color: #9f9a9a;
+	color: #212529;
+}
+
+table tbody td{
+	font-size: 15px;
+	font-weight: 700;
+	
+	padding: 10px !important;
+	
+    height: 100%;
+	
+
+	
+}
+h4{
+	vertical-align: middle;
+}
+.img-fluid{
+	max-width: 100%;
+	 height: auto;
+}
+
+   .rotate{
+      width:300px;
+      height:300px;
+      border:solid 1px red;
+   }
